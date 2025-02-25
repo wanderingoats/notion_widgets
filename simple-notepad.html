@@ -28,6 +28,7 @@
       border: none;
       border-radius: 8px;
       resize: none;
+      overflow: hidden;
       outline: none;
       background-color: transparent;
     }
@@ -74,9 +75,15 @@
             <textarea id="noteText" placeholder="Write your notes here..."></textarea>
         </div>
         <script>
-        function changeColor(color) {
-            document.getElementById('quicknote').style.backgroundColor = color;
-        }
+          function changeColor(color) {
+              document.getElementById('quicknote').style.backgroundColor = color;
+          }
+
+
+          function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px'; 
+          }
     </script>
 </body>
 </html>
