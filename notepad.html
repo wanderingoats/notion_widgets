@@ -54,16 +54,6 @@
         .color-button:hover {
             transform: scale(1.1);
         }
-        .text-size-button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .text-size-button:hover {
-            transform: scale(1.1);
-        }
   </style>
 </head>
 <body>
@@ -80,9 +70,6 @@
                 <button class="color-button" style="background-color: #F9F2F5;" onclick="changeColor('#F9F2F5')"></button>
                 <button class="color-button" style="background-color: #FAECEC;" onclick="changeColor('#FAECEC')"></button>
             </div>
-            <button class="text-size-button" onclick="changeTextSize('small')">S</button>
-            <button class="text-size-button" onclick="changeTextSize('large')">S</button>
-        </div>
         <div class="quick-note" id="quicknote">
             <textarea id="noteText" placeholder="Write your notes here..."></textarea>
         </div>
