@@ -11,12 +11,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
       padding: 1px;
+      overflow: hidden;
     }
     .quick-note {
             min-height: 16em;
-	          min-width: 16em;
-	          display: flex;
+	    min-width: 16em;
+	    display: flex;
             flex-direction: column;
             padding: 20px;
             background-color: #ffffff; 
@@ -34,12 +36,9 @@
       border: none;
       border-radius: 8px;
       resize: none;
-      overflow: auto;
+      overflow: none;
       outline: none;
       background-color: transparent;
-
-      scrollbar-width: thin;
-      scrollbar-color: #373530 #f0f0f0;
     }
      .controls {
             display: flex;
@@ -63,18 +62,7 @@
         .color-button:hover {
             transform: scale(1.1);
         }
-        textarea::-webkit-scrollbar {
-      width: 8px;
-    }
-    textarea::-webkit-scrollbar-track {
-      background: #f0f0f0;
-      border-radius: 8px;
-    }
-    textarea::-webkit-scrollbar-thumb {
-      background-color: #373530;
-      border-radius: 8px;
-      border: 2px solid #f0f0f0;
-    }
+        
   </style>
 </head>
 <body>
