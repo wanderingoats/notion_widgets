@@ -14,6 +14,7 @@
       padding: 1px;
     }
     .quick-note {
+            width: 300px;
             padding: 20px;
             background-color: #ffffff; 
             border-radius: 15px;
@@ -79,7 +80,9 @@
               document.getElementById('quicknote').style.backgroundColor = color;
           }
 
-
+          const textarea = document.getElementById('noteText');
+            textarea.addEventListener('input', autoResize, false);
+          
           function autoResize() {
             this.style.height = 'auto';
             this.style.height = this.scrollHeight + 'px'; 
